@@ -146,13 +146,17 @@ body {
     padding: 5px;
   }
   .color-container {
-    width: 100%;
+    width: 80%;
     height: 50px;
     border: 1px solid gray; 
     border-radius: 5px;
     padding: 0px;
     left: 0px;
     box-shadow: 0px 0px 0px 0.6px lightgray;
+  }
+  .color-boxes {
+    position: relative;
+    left: 11%;
   }
   .color-code {
     display: none;
@@ -185,6 +189,14 @@ body {
   }
 }
 
+
+@media (max-width: 1199px) {
+  .ct-footer-list > li {
+    display: inline-block;
+    float: left;
+  }
+}
+
 /* Desktops*/
 @media (min-width:1200px) {
   .ct-footer-list > li {
@@ -196,9 +208,175 @@ body {
     width: 7%;
   }
 }
-@media (max-width: 1199px) {
-  .ct-footer-list > li {
-    display: inline-block;
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  #aap-mobile-phones {
+    display: none;
+  }
+ #aap-tablet {
+   display: none;
+ }
+ #aap-non-tablet {
+   display: block;
+ }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #aap-mobile-phones {
+    display: none;
+  }
+  #aap-tablet {
+    display: none;
+  }
+  #aap-non-tablet {
+    display: block;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #aap-mobile-phones {
+    display: none;
+  }
+  #aap-tablet {
+    display: block;
+    margin-top: 8%;
+  }
+  #aap-non-tablet {
+    display: none;
+  }
+  .color-boxes {
+    width: 38%;
+  }
+  .color-box1 {
     float: left;
+    left: 5%;
+  }
+  .color-box2 {
+    float: right;
+    right: 5%;
+  }
+  .color-box3 {
+    left: 30%;
+    right: 15%;
+    margin-top: 2%;
+  }
+  .img-container {
+    top: 30%;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #aap-tablet {
+    display: block;
+    margin-top: 8%;
+  }
+  #aap-mobile-phones {
+    display: none;
+  }
+  #aap-non-tablet {
+    display: none;
+  }
+  .color-boxes {
+    width: 38%;
+  }
+  .color-box1 {
+    float: left;
+    left: 5%;
+  }
+  .color-box2 {
+    float: right;
+    right: 5%;
+  }
+  .color-box3 {
+    left: 30%;
+    right: 15%;
+    margin-top: 2%;
+  }
+  .img-container {
+    top: 30%;
+  }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  #aap-tablet {
+    display: none;
+  }
+  #aap-non-tablet {
+    display: none;
+  }
+  #aap-mobile-phones {
+    display: block;
+    padding-top: 28%;
+  }
+  .img-container {
+    position: absolute;
+    top: 31%;
+    right: 24%;
+    top: 38%;
+    height: 93px;
+  }
+  .can-images {
+    height: 208px;
+  }
+
+  .color-container {
+    width: 70%;
+    border: 5px radius;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #aap-tablet {
+    display: none;
+  }
+  #aap-non-tablet {
+    display: none;
+  }
+  #aap-mobile-phones {
+    display: block;
+    padding-top: 28%;
+  }
+  .img-container {
+    position: absolute;
+    top: 31%;
+    right: 24%;
+    height: 93px;
+    top: 38%
+  }
+  .can-images {
+    height: 208px;
   }
 }
