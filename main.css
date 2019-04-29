@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-body {
+html, body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
@@ -12,13 +12,8 @@ body {
   height: 60px;
 }
 .primary-nav-bar {
-  position: absolute;
-  top: 54px;
   height: 40px;
-  left: 0;
   width: 100%;
-  padding-left: 26px;
-  list-style: none;
   background-color: darkred;
   margin: 0;
 }
@@ -47,26 +42,35 @@ body {
   position: relative;
   right: 39px;
 }
+#aap-mobile-wrapper {
+  display: none;
+}
 .customer-background {
   background: url(images/B&W_bg.jpg) right center / cover no-repeat;
-  min-height: 310px;
+  height: 374px;
   display: flex;
 }
+.font-header-1 {
+  font-size: 2.25pc;
+}
 .marketing-content {
-  position: absolute;
+  position: relative;
   top: 20%;
   left: 1%;
   color: white;
   width: 50%;
 }
+
 .content-header {
   font-size: 29px
 }
 .img-container {
-  position: absolute;
-  right: 0;
-  top: 16%;
+  position: relative;
+  right: 0px;
+  left: 13%;
+  margin-top: 2%;
 }
+
 .can-images {
   height: 250px;
 }
@@ -218,10 +222,14 @@ body {
   }
   .marketing-content {
     position: absolute;
-    top: 11%;
+    top: 20%;
     left: 2%;
     color: white;
     width: 50%;
+  }
+  .img-container {
+    right: 0px;
+    left: 64%;
   }
   #aap-mobile-phones {
     display: none;
@@ -270,11 +278,9 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
   .nav-bar {
     background: black;
-    padding-top: 4px;
-    height: 42px;
-    position: absolute;
-    top: 7px;
-    left: 12px;
+    padding-top: 0px;
+    height: 40px;
+    left: 1%;
     min-width: 20%;
   }
   .second-nav {
@@ -295,18 +301,17 @@ body {
     padding: 38px;
     color: white;
     width: 50%;
-
     position: initial;
     top: 7%;
     left: 0;
   }
-  .content-header {
-    font-weight: 100;
-  }
   .img-container {
     position: absolute;
-    right: 0;
-    top: 16%;
+    left: 51%;
+    top: 20%;
+  }
+  .content-header {
+    font-weight: 100;
   }
   #aap-mobile-phones {
     display: none;
@@ -405,11 +410,6 @@ body {
     right: 15%;
     margin-top: 2%;
   }
-  .img-container {
-    position: absolute;
-    right: 0;
-    top: 25%;
-  }
   .nav-bar {
     background: black;
     padding-top: 4px;
@@ -418,13 +418,6 @@ body {
     top: 7px;
     left: 12px;
     min-width: 20%;
-  }
-  .second-nav {
-    position: absolute;
-    padding: 0;
-    left: 1%;
-    top: 7px;
-    width: 100%;
   }
   .input-box {
     margin: auto;
@@ -440,6 +433,12 @@ body {
     position: initial;
     top: 7%;
     left: 0;
+  }
+ 
+  .img-container {
+    position: absolute;
+    left: 58%;
+    top: 28%;
   }
   .content-header {
     font-weight: 100;
@@ -512,39 +511,27 @@ body {
     flex-direction: column;
   }
   .customer-background {
-    min-height: 428px;
-  }
-  .marketing-content,
-  .img-container {
-    width: auto;
-    position: static;
-    margin-top: 20px;
-    padding: 5px;
+    min-height: 374px;
   }
   .marketing-content {
-    padding-left: 40px;
-    padding-top: 40px;
-    padding-right: 40px;
+    top: 0%;
+    width: 100%;
+    padding: 40px;
   }
   .img-container {
-    position: absolute;
-    left: 21%;
-    top: 45%;
+    bottom: 40px;
+    left: 16%;
   }
   .can-images {
-    height: 224px;
-  }
-  h1 {
-    font-size: 28px;
+    height: 232px;
   }
   .content-header, p {
     font-weight: 100;
   }
-  
   .color-container {
     width: 96%;
     height: 50px;
-    border: 1px solid gray;
+    border: 0;
     border-radius: 10px;
     padding: 0px;
     left: 0px;
@@ -573,9 +560,6 @@ body {
   #aap-mobile-phones {
     display: block;
     padding-top: 13%;
-  }
-  .can-images {
-    height: 208px;
   }
   /** footer */
   .footer-container {
@@ -635,33 +619,21 @@ body {
     padding: 10px;
     background-color: darkred;
   }
+ 
   .wrap {
     flex-direction: column;
   }
   .customer-background {
     min-height: 428px;
   }
-  .marketing-content,
-  .img-container {
-    width: auto;
-    position: static;
-    margin-top: 20px;
-    padding: 5px;
-  }
   .marketing-content {
-    padding-left: 40px;
-    padding-top: 40px;
-    padding-right: 40px;
+    width: 100%;
+    padding: 15px;
+    top: 8%;
   }
   .img-container {
-    position: absolute;
-    left: 6%;
-    height: 93px;
-    top: 45%;
-
-  }
-  h1 {
-    font-size: 28px;
+    bottom: -60px;
+    left: 8%;
   }
   .content-header, p {
     font-weight: 100;
