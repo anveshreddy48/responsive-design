@@ -104,30 +104,6 @@ body {
 .footer-container {
   padding-left: 15%;
 }
-.ct-footer-list {
-  padding: 50px 0;
-  list-style: none;
-  padding-left: 0;
-  display: table;
-  width: 100%;
-  border-bottom: 1px solid #555;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-.ct-footer-list > li .ct-footer-list-header {
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #fff;
-  font-size: 20px;
-}
-.ct-footer-list > li ul {
-  list-style: none;
-  padding-left: 0;
-}
-.ct-footer-list > li ul li a {
-  color: #fff;
-}
-.ct-footer-list > li ul li a:hover {
-  text-decoration: underline;
-}
 #aap-footer {
   background: #333;
   width: 100%;
@@ -195,10 +171,12 @@ body {
   .footer-list-links {
     padding-left: 0px;
   }  
-  .footer-container-tablet {
+  .footer-container-desktop {
     display: block;
+    padding-top: 41px;
   }
-  .footer-container-mobile {
+  .footer-container-mobile,
+  .footer-container-tablet {
     display: none;
   }
   #aap-footer {
@@ -211,7 +189,6 @@ body {
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
-
 @media (min-width: 1025px) and (max-width: 1280px) {
   .nav-bar {
     background: black;
@@ -234,6 +211,17 @@ body {
     border: 0px;
     padding: 10px;
     background-color: darkred;
+  }
+  .customer-background {
+    min-height: 320px;
+    display: flex;
+  }
+  .marketing-content {
+    position: absolute;
+    top: 11%;
+    left: 2%;
+    color: white;
+    width: 50%;
   }
   #aap-mobile-phones {
     display: none;
@@ -260,10 +248,12 @@ body {
   .footer-list-links {
     padding-left: 0px;
   }  
-  .footer-container-tablet {
+  .footer-container-desktop {
     display: block;
+    padding-top: 41px;
   }
-  .footer-container-mobile {
+  .footer-container-mobile,
+  .footer-container-tablet {
     display: none;
   }
   #aap-footer {
@@ -275,8 +265,8 @@ body {
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
+  ********These are for exact tablets
 */
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .nav-bar {
     background: black;
@@ -349,7 +339,8 @@ body {
     display: block;
     padding-top: 28px;
   }
-  .footer-container {
+  .footer-container,
+  .footer-container-desktop {
     display: none;
   }
   .footer-list-header, a {
@@ -372,7 +363,8 @@ body {
   .footer-container-tablet {
     display: block;
   }
-  .footer-container-mobile {
+  .footer-container-mobile,
+  .footer-container-desktop {
     display: none;
   }
   #aap-footer {
@@ -384,8 +376,8 @@ body {
 /* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
+  ********These are for tablets with resolution
 */
-
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   #aap-tablet {
     display: block;
@@ -414,8 +406,9 @@ body {
     margin-top: 2%;
   }
   .img-container {
-    top: 30%;
     position: absolute;
+    right: 0;
+    top: 25%;
   }
   .nav-bar {
     background: black;
@@ -444,7 +437,6 @@ body {
     padding: 38px;
     color: white;
     width: 50%;
-
     position: initial;
     top: 7%;
     left: 0;
@@ -452,49 +444,20 @@ body {
   .content-header {
     font-weight: 100;
   }
-  .img-container {
-    position: absolute;
-    right: 0;
-    top: 16%;
-  }
-  #aap-mobile-phones {
+  .footer-container {
     display: none;
   }
-  #aap-tablet {
-    display: block;
-    margin-top: 8%;
-  }
-  #aap-non-tablet {
-    display: none;
-  }
-  .color-boxes {
-    width: 38%;
-  }
-  .color-box1 {
-    float: left;
-    left: 5%;
-  }
-  .color-box2 {
-    float: right;
-    right: 5%;
-  }
-  .color-box3 {
-    left: 30%;
-    right: 15%;
-    margin-top: 2%;
-  }
-  
   .footer-container-tablet {
     display: block;
     padding-top: 28px;
   }
-  .footer-container {
+  .footer-container-mobile,
+  .footer-container-desktop {
     display: none;
   }
   .footer-list-header, a {
     color: white;
   }
-  
   .footer-box-1 {
     float: left;
     left: 23%;
@@ -507,12 +470,6 @@ body {
   }
   .footer-list-links {
     padding-left: 0px;
-  }  
-  .footer-container-tablet {
-    display: block;
-  }
-  .footer-container-mobile {
-    display: none;
   }
   #aap-footer {
     min-height: 152px;
@@ -523,65 +480,30 @@ body {
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
+  These are for low resolution tablets
 */
-
 @media (min-width: 481px) and (max-width: 767px) {
-  #aap-tablet {
-    display: none;
-  }
-  #aap-non-tablet {
-    display: none;
-  }
-  #aap-mobile-phones {
-    display: block;
-    padding-top: 28%;
-  }
-  .img-container {
-    position: absolute;
-    top: 31%;
-    right: 24%;
-    top: 38%;
-    height: 93px;
-  }
-  .can-images {
-    height: 208px;
-  }
-
-  .color-container {
-    width: 70%;
-    border: 5px radius;
-  }
-
-  /** adding here */
   #aap-tablet {
     display: block;
     margin-top: 8%;
   }
-  #aap-mobile-phones {
-    display: none;
-  }
   #aap-non-tablet {
     display: none;
   }
-  .color-boxes {
-    width: 38%;
+  #aap-mobile-phones {
+    display: none;
   }
-  .color-box1 {
-    float: left;
-    left: 5%;
+  .can-images {
+    height: 208px;
   }
-  .color-box2 {
-    float: right;
-    right: 5%;
-  }
-  .color-box3 {
-    left: 30%;
-    right: 15%;
-    margin-top: 2%;
+  .color-container {
+    width: 70%;
+    border: 5px radius;
   }
   .img-container {
-    top: 30%;
     position: absolute;
+    right: 0%;
+    top: 34%;
   }
   .nav-bar {
     background: black;
@@ -610,7 +532,6 @@ body {
     padding: 38px;
     color: white;
     width: 50%;
-
     position: initial;
     top: 7%;
     left: 0;
@@ -618,23 +539,9 @@ body {
   .content-header {
     font-weight: 100;
   }
-  .img-container {
-    position: absolute;
-    right: 0;
-    top: 16%;
-  }
-  #aap-mobile-phones {
-    display: none;
-  }
-  #aap-tablet {
-    display: block;
-    margin-top: 8%;
-  }
-  #aap-non-tablet {
-    display: none;
-  }
+
   .color-boxes {
-    width: 38%;
+    width: 50%;
   }
   .color-box1 {
     float: left;
@@ -649,14 +556,18 @@ body {
     right: 15%;
     margin-top: 2%;
   }
-  
+  .footer-container {
+    display: none;
+  }
   .footer-container-tablet {
     display: block;
     padding-top: 28px;
   }
-  .footer-container {
+  .footer-container-mobile,
+  .footer-container-desktop {
     display: none;
   }
+ 
   .footer-list-header, a {
     color: white;
   }
@@ -674,12 +585,6 @@ body {
   .footer-list-links {
     padding-left: 0px;
   }  
-  .footer-container-tablet {
-    display: block;
-  }
-  .footer-container-mobile {
-    display: none;
-  }
   #aap-footer {
     min-height: 152px;
     margin-top: 8%;
@@ -689,9 +594,10 @@ body {
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
+  ### these are for all mobiles
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .nav-bar {
     background: black;
     padding-top: 4px;
@@ -796,126 +702,8 @@ body {
   a {
     color:white;
   }
-  .footer-container-tablet {
-    display: none;
-  }
-  .footer-container-mobile {
-    display: block;
-  }
-  #aap-footer {
-    margin-top: 20px;
-    padding-left: 24%;
-    padding-top: 5%;
-    padding-bottom: 20%;
-  }
-}
-
-@media (max-width: 319px) {
-  .nav-bar {
-    background: black;
-    padding-top: 4px;
-    height: 42px;
-    position: absolute;
-    top: 7px;
-    left: 3%;
-    width: 13%;
-  }
-  .second-nav {
-    position: absolute;
-    /* left: 19%; */
-    /* padding-top: 4px; */
-    height: 42px;
-    top: 7px;
-    min-width: 105%
-  }
-  .input-box {
-    margin: auto;
-    width: 76%;
-    border: 0px;
-    padding: 10px;
-    background-color: darkred;
-  }
-  .wrap {
-    flex-direction: column;
-  }
-  .customer-background {
-    min-height: 428px;
-  }
-  .marketing-content,
-  .img-container {
-    width: auto;
-    position: static;
-    margin-top: 20px;
-    padding: 5px;
-  }
-  .marketing-content {
-    padding-left: 40px;
-    padding-top: 40px;
-    padding-right: 40px;
-  }
-  .img-container {
-    position: absolute;
-    left: 6%;
-    height: 93px;
-    top: 45%;
-
-  }
-  h1 {
-    font-size: 28px;
-  }
-  .content-header, p {
-    font-weight: 100;
-  }
-  
-  .color-container {
-    width: 96%;
-    height: 50px;
-    border: 1px solid gray;
-    border-radius: 10px;
-    padding: 0px;
-    left: 0px;
-    box-shadow: 0px 0px 0px 0.6px lightgray;
-  }
-  .color-boxes {
-    position: relative;
-    left: 2%;
-  }
-  .color-code {
-    display: none;
-  }
-  .overlap-div {
-    margin-top: 12%;
-  }
-  .med-device-color {
-    display: none;
-  }
-  
-  #aap-tablet {
-    display: none;
-  }
-  #aap-non-tablet {
-    display: none;
-  }
-  #aap-mobile-phones {
-    display: block;
-    padding-top: 13%;
-  }
-  .can-images {
-    height: 208px;
-  }
-  /** footer */
-  .footer-container {
-    left: 15px;
-    padding-left: 26%;
-    height: 250px;
-  }
-  .aap-footer-headers {
-    color: white;
-  } 
-  a {
-    color:white;
-  }
-  .footer-container-tablet {
+  .footer-container-tablet,
+  .footer-container-desktop {
     display: none;
   }
   .footer-container-mobile {
