@@ -1,8 +1,11 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 .header-bg{
   background: red;
@@ -98,11 +101,6 @@ body {
   position: relative;
   top: 38%;
 }
-.ct-footer {
-  background-color: #111;
-  padding-top: 59px;
-  margin-top: 52px;
-}
 .footer-container {
   padding-left: 15%;
 }
@@ -130,85 +128,11 @@ body {
 .ct-footer-list > li ul li a:hover {
   text-decoration: underline;
 }
-
+#aap-footer {
+  background: #333;
+  width: 100%;
+}
 /** Media Queries */
-
-/** Mobile devices*/
-@media (min-width: 360px) and (max-width: 767px) {
-  .wrap {
-    flex-direction: column;
-  }
-  .marketing-content,
-  .img-container {
-    width: auto;
-    position: static;
-    margin-top: 20px;
-    padding: 5px;
-  }
-  .color-container {
-    width: 80%;
-    height: 50px;
-    border: 1px solid gray; 
-    border-radius: 5px;
-    padding: 0px;
-    left: 0px;
-    box-shadow: 0px 0px 0px 0.6px lightgray;
-  }
-  .color-boxes {
-    position: relative;
-    left: 11%;
-  }
-  .color-code {
-    display: none;
-  }
-  .overlap-div {
-    margin-top: 12%;
-  }
-  .ct-footer-list > li {
-    width: 50%;
-  }
-  .med-device-color {
-    display: none;
-  }
-}
-
-@media (max-width:479px) {
-  .ct-footer-list > li {
-    width: 100%;
-    text-align: center;
-  }
-  .ct-footer-list {
-    padding: 20px 0;
-  }
-}
-
-/** Tablets/iPads */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .ct-footer-list > li {
-    width: 33.3333%;
-  }
-}
-
-
-@media (max-width: 1199px) {
-  .ct-footer-list > li {
-    display: inline-block;
-    float: left;
-  }
-}
-
-/* Desktops*/
-@media (min-width:1200px) {
-  .ct-footer-list > li {
-    width: 20%;
-    display: table-cell;
-    vertical-align: top;
-  }
-  .ct-footer-list > li:last-child {
-    width: 7%;
-  }
-}
-
 
 /* 
   ##Device = Desktops
@@ -216,23 +140,28 @@ body {
 */
 
 @media (min-width: 1281px) {
-  #aap-mobile-phones {
-    display: none;
+  .nav-bar {
+    background: black;
+    height: 42px;
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    min-width: 14%;
   }
- #aap-tablet {
-   display: none;
- }
- #aap-non-tablet {
-   display: block;
- }
-}
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
+  .second-nav {
+    position: absolute;
+    padding: 0;
+    left: 1%;
+    top: 7px;
+    width: 100%;
+  }
+  .input-box {
+    margin: auto;
+    width: 52%;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: darkred;
+  }
   #aap-mobile-phones {
     display: none;
   }
@@ -242,7 +171,105 @@ body {
   #aap-non-tablet {
     display: block;
   }
+  .footer-container-tablet {
+    display: block;
+    padding-top: 28px;
+  }
+  .footer-container {
+    display: none;
+  }
+  .footer-list-header, a {
+    color: white;
+  }
   
+  .footer-box-1 {
+    float: left;
+    left: 23%;
+    width: 50%;
+  }
+  .footer-box-2 {
+    float: right;
+    left: 7%;
+    width: 50%;
+  }
+  .footer-list-links {
+    padding-left: 0px;
+  }  
+  .footer-container-tablet {
+    display: block;
+  }
+  .footer-container-mobile {
+    display: none;
+  }
+  #aap-footer {
+    min-height: 152px;
+    margin-top: 8%;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .nav-bar {
+    background: black;
+    height: 42px;
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    min-width: 14%;
+  }
+  .second-nav {
+    position: absolute;
+    padding: 0;
+    left: 1%;
+    top: 7px;
+    width: 100%;
+  }
+  .input-box {
+    margin: auto;
+    width: 52%;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: darkred;
+  }
+  #aap-mobile-phones {
+    display: none;
+  }
+  #aap-tablet {
+    display: none;
+  }
+  #aap-non-tablet {
+    display: block;
+  }
+  .footer-list-header, a {
+    color: white;
+  }
+  .footer-box-1 {
+    float: left;
+    left: 23%;
+    width: 50%;
+  }
+  .footer-box-2 {
+    float: right;
+    left: 7%;
+    width: 50%;
+  }
+  .footer-list-links {
+    padding-left: 0px;
+  }  
+  .footer-container-tablet {
+    display: block;
+  }
+  .footer-container-mobile {
+    display: none;
+  }
+  #aap-footer {
+    min-height: 152px;
+    margin-top: 8%;
+  }
 }
 
 /* 
@@ -251,6 +278,46 @@ body {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .nav-bar {
+    background: black;
+    padding-top: 4px;
+    height: 42px;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    min-width: 20%;
+  }
+  .second-nav {
+    position: absolute;
+    padding: 0;
+    left: 1%;
+    top: 7px;
+    width: 100%;
+  }
+  .input-box {
+    margin: auto;
+    width: 52%;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: darkred;
+  }
+  .marketing-content {
+    padding: 38px;
+    color: white;
+    width: 50%;
+
+    position: initial;
+    top: 7%;
+    left: 0;
+  }
+  .content-header {
+    font-weight: 100;
+  }
+  .img-container {
+    position: absolute;
+    right: 0;
+    top: 16%;
+  }
   #aap-mobile-phones {
     display: none;
   }
@@ -277,8 +344,40 @@ body {
     right: 15%;
     margin-top: 2%;
   }
-  .img-container {
-    top: 30%;
+  
+  .footer-container-tablet {
+    display: block;
+    padding-top: 28px;
+  }
+  .footer-container {
+    display: none;
+  }
+  .footer-list-header, a {
+    color: white;
+  }
+  
+  .footer-box-1 {
+    float: left;
+    left: 23%;
+    width: 50%;
+  }
+  .footer-box-2 {
+    float: right;
+    left: 7%;
+    width: 50%;
+  }
+  .footer-list-links {
+    padding-left: 0px;
+  }  
+  .footer-container-tablet {
+    display: block;
+  }
+  .footer-container-mobile {
+    display: none;
+  }
+  #aap-footer {
+    min-height: 152px;
+    margin-top: 8%;
   }
 }
 
@@ -316,8 +415,9 @@ body {
   }
   .img-container {
     top: 30%;
+    position: absolute;
   }
-  
+
 }
 
 /* 
@@ -359,6 +459,85 @@ body {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .nav-bar {
+    background: black;
+    padding-top: 4px;
+    height: 42px;
+    position: absolute;
+    top: 7px;
+    left: 3%;
+    width: 13%;
+  }
+  .second-nav {
+    position: absolute;
+    /* left: 19%; */
+    /* padding-top: 4px; */
+    height: 42px;
+    top: 7px;
+    min-width: 105%
+  }
+  .input-box {
+    margin: auto;
+    width: 76%;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: darkred;
+  }
+  .wrap {
+    flex-direction: column;
+  }
+  .customer-background {
+    min-height: 428px;
+  }
+  .marketing-content,
+  .img-container {
+    width: auto;
+    position: static;
+    margin-top: 20px;
+    padding: 5px;
+  }
+  .marketing-content {
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+  }
+  .img-container {
+    position: absolute;
+    left: 6%;
+    height: 93px;
+    top: 45%;
+
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .content-header, p {
+    font-weight: 100;
+  }
+  
+  .color-container {
+    width: 96%;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 0px 0.6px lightgray;
+  }
+  .color-boxes {
+    position: relative;
+    left: 2%;
+  }
+  .color-code {
+    display: none;
+  }
+  .overlap-div {
+    margin-top: 12%;
+  }
+  .med-device-color {
+    display: none;
+  }
+  
   #aap-tablet {
     display: none;
   }
@@ -367,16 +546,33 @@ body {
   }
   #aap-mobile-phones {
     display: block;
-    padding-top: 28%;
-  }
-  .img-container {
-    position: absolute;
-    top: 31%;
-    right: 24%;
-    height: 93px;
-    top: 38%
+    padding-top: 13%;
   }
   .can-images {
     height: 208px;
+  }
+  /** footer */
+  .footer-container {
+    left: 15px;
+    padding-left: 26%;
+    height: 250px;
+  }
+  .aap-footer-headers {
+    color: white;
+  } 
+  a {
+    color:white;
+  }
+  .footer-container-tablet {
+    display: none;
+  }
+  .footer-container-mobile {
+    display: block;
+  }
+  #aap-footer {
+    margin-top: 20px;
+    padding-left: 24%;
+    padding-top: 5%;
+    padding-bottom: 20%;
   }
 }
