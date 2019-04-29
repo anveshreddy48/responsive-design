@@ -39,7 +39,7 @@ body {
 .input-box {
   margin: auto;
   width: 50%;
-  border: 1px solid black;
+  border: 0px;
   padding: 10px;
   background-color: darkred; 
 }
@@ -158,7 +158,7 @@ body {
   .input-box {
     margin: auto;
     width: 52%;
-    border: 1px solid black;
+    border: 0px;
     padding: 10px;
     background-color: darkred;
   }
@@ -231,7 +231,7 @@ body {
   .input-box {
     margin: auto;
     width: 52%;
-    border: 1px solid black;
+    border: 0px;
     padding: 10px;
     background-color: darkred;
   }
@@ -297,7 +297,7 @@ body {
   .input-box {
     margin: auto;
     width: 52%;
-    border: 1px solid black;
+    border: 0px;
     padding: 10px;
     background-color: darkred;
   }
@@ -417,7 +417,107 @@ body {
     top: 30%;
     position: absolute;
   }
+  .nav-bar {
+    background: black;
+    padding-top: 4px;
+    height: 42px;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    min-width: 20%;
+  }
+  .second-nav {
+    position: absolute;
+    padding: 0;
+    left: 1%;
+    top: 7px;
+    width: 100%;
+  }
+  .input-box {
+    margin: auto;
+    width: 52%;
+    border: 0px;
+    padding: 10px;
+    background-color: darkred;
+  }
+  .marketing-content {
+    padding: 38px;
+    color: white;
+    width: 50%;
 
+    position: initial;
+    top: 7%;
+    left: 0;
+  }
+  .content-header {
+    font-weight: 100;
+  }
+  .img-container {
+    position: absolute;
+    right: 0;
+    top: 16%;
+  }
+  #aap-mobile-phones {
+    display: none;
+  }
+  #aap-tablet {
+    display: block;
+    margin-top: 8%;
+  }
+  #aap-non-tablet {
+    display: none;
+  }
+  .color-boxes {
+    width: 38%;
+  }
+  .color-box1 {
+    float: left;
+    left: 5%;
+  }
+  .color-box2 {
+    float: right;
+    right: 5%;
+  }
+  .color-box3 {
+    left: 30%;
+    right: 15%;
+    margin-top: 2%;
+  }
+  
+  .footer-container-tablet {
+    display: block;
+    padding-top: 28px;
+  }
+  .footer-container {
+    display: none;
+  }
+  .footer-list-header, a {
+    color: white;
+  }
+  
+  .footer-box-1 {
+    float: left;
+    left: 23%;
+    width: 50%;
+  }
+  .footer-box-2 {
+    float: right;
+    left: 7%;
+    width: 50%;
+  }
+  .footer-list-links {
+    padding-left: 0px;
+  }  
+  .footer-container-tablet {
+    display: block;
+  }
+  .footer-container-mobile {
+    display: none;
+  }
+  #aap-footer {
+    min-height: 152px;
+    margin-top: 8%;
+  }
 }
 
 /* 
@@ -451,6 +551,139 @@ body {
     width: 70%;
     border: 5px radius;
   }
+
+  /** adding here */
+  #aap-tablet {
+    display: block;
+    margin-top: 8%;
+  }
+  #aap-mobile-phones {
+    display: none;
+  }
+  #aap-non-tablet {
+    display: none;
+  }
+  .color-boxes {
+    width: 38%;
+  }
+  .color-box1 {
+    float: left;
+    left: 5%;
+  }
+  .color-box2 {
+    float: right;
+    right: 5%;
+  }
+  .color-box3 {
+    left: 30%;
+    right: 15%;
+    margin-top: 2%;
+  }
+  .img-container {
+    top: 30%;
+    position: absolute;
+  }
+  .nav-bar {
+    background: black;
+    padding-top: 4px;
+    height: 42px;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    min-width: 20%;
+  }
+  .second-nav {
+    position: absolute;
+    padding: 0;
+    left: 1%;
+    top: 7px;
+    width: 100%;
+  }
+  .input-box {
+    margin: auto;
+    width: 52%;
+    border: 0px;
+    padding: 10px;
+    background-color: darkred;
+  }
+  .marketing-content {
+    padding: 38px;
+    color: white;
+    width: 50%;
+
+    position: initial;
+    top: 7%;
+    left: 0;
+  }
+  .content-header {
+    font-weight: 100;
+  }
+  .img-container {
+    position: absolute;
+    right: 0;
+    top: 16%;
+  }
+  #aap-mobile-phones {
+    display: none;
+  }
+  #aap-tablet {
+    display: block;
+    margin-top: 8%;
+  }
+  #aap-non-tablet {
+    display: none;
+  }
+  .color-boxes {
+    width: 38%;
+  }
+  .color-box1 {
+    float: left;
+    left: 5%;
+  }
+  .color-box2 {
+    float: right;
+    right: 5%;
+  }
+  .color-box3 {
+    left: 30%;
+    right: 15%;
+    margin-top: 2%;
+  }
+  
+  .footer-container-tablet {
+    display: block;
+    padding-top: 28px;
+  }
+  .footer-container {
+    display: none;
+  }
+  .footer-list-header, a {
+    color: white;
+  }
+  
+  .footer-box-1 {
+    float: left;
+    left: 23%;
+    width: 50%;
+  }
+  .footer-box-2 {
+    float: right;
+    left: 7%;
+    width: 50%;
+  }
+  .footer-list-links {
+    padding-left: 0px;
+  }  
+  .footer-container-tablet {
+    display: block;
+  }
+  .footer-container-mobile {
+    display: none;
+  }
+  #aap-footer {
+    min-height: 152px;
+    margin-top: 8%;
+  }
 }
 
 /* 
@@ -479,7 +712,126 @@ body {
   .input-box {
     margin: auto;
     width: 76%;
-    border: 1px solid black;
+    border: 0px;
+    padding: 10px;
+    background-color: darkred;
+  }
+  .wrap {
+    flex-direction: column;
+  }
+  .customer-background {
+    min-height: 428px;
+  }
+  .marketing-content,
+  .img-container {
+    width: auto;
+    position: static;
+    margin-top: 20px;
+    padding: 5px;
+  }
+  .marketing-content {
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+  }
+  .img-container {
+    position: absolute;
+    left: 6%;
+    height: 93px;
+    top: 45%;
+
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .content-header, p {
+    font-weight: 100;
+  }
+  
+  .color-container {
+    width: 96%;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 0px 0.6px lightgray;
+  }
+  .color-boxes {
+    position: relative;
+    left: 2%;
+  }
+  .color-code {
+    display: none;
+  }
+  .overlap-div {
+    margin-top: 12%;
+  }
+  .med-device-color {
+    display: none;
+  }
+  
+  #aap-tablet {
+    display: none;
+  }
+  #aap-non-tablet {
+    display: none;
+  }
+  #aap-mobile-phones {
+    display: block;
+    padding-top: 13%;
+  }
+  .can-images {
+    height: 208px;
+  }
+  /** footer */
+  .footer-container {
+    left: 15px;
+    padding-left: 26%;
+    height: 250px;
+  }
+  .aap-footer-headers {
+    color: white;
+  } 
+  a {
+    color:white;
+  }
+  .footer-container-tablet {
+    display: none;
+  }
+  .footer-container-mobile {
+    display: block;
+  }
+  #aap-footer {
+    margin-top: 20px;
+    padding-left: 24%;
+    padding-top: 5%;
+    padding-bottom: 20%;
+  }
+}
+
+@media (max-width: 319px) {
+  .nav-bar {
+    background: black;
+    padding-top: 4px;
+    height: 42px;
+    position: absolute;
+    top: 7px;
+    left: 3%;
+    width: 13%;
+  }
+  .second-nav {
+    position: absolute;
+    /* left: 19%; */
+    /* padding-top: 4px; */
+    height: 42px;
+    top: 7px;
+    min-width: 105%
+  }
+  .input-box {
+    margin: auto;
+    width: 76%;
+    border: 0px;
     padding: 10px;
     background-color: darkred;
   }
