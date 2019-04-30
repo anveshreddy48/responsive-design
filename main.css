@@ -47,7 +47,7 @@ html, body {
 }
 .customer-background {
   background: url(images/B&W_bg.jpg) right center / cover no-repeat;
-  height: 374px;
+  /* // height: 374px; */
   display: flex;
 }
 .font-header-1 {
@@ -68,7 +68,6 @@ html, body {
   position: relative;
   right: 0px;
   left: 13%;
-  margin-top: 2%;
 }
 
 .can-images {
@@ -141,6 +140,9 @@ html, body {
     border: 0px;
     padding: 10px;
     background-color: darkred;
+  }
+  .customer-background {
+    min-height: 281px;
   }
   #aap-mobile-phones {
     display: none;
@@ -217,7 +219,7 @@ html, body {
     background-color: darkred;
   }
   .customer-background {
-    min-height: 320px;
+    min-height: 281px;
     display: flex;
   }
   .marketing-content {
@@ -306,9 +308,8 @@ html, body {
     left: 0;
   }
   .img-container {
-    position: absolute;
-    left: 51%;
-    top: 20%;
+    left: 3%;
+    bottom: -73px;
   }
   .content-header {
     font-weight: 100;
@@ -436,9 +437,8 @@ html, body {
   }
  
   .img-container {
-    position: absolute;
-    left: 58%;
-    top: 28%;
+    left: 3%;
+    bottom: -73px;
   }
   .content-header {
     font-weight: 100;
@@ -519,11 +519,11 @@ html, body {
     padding: 40px;
   }
   .img-container {
-    bottom: 40px;
     left: 16%;
+    bottom: -60px;
   }
   .can-images {
-    height: 232px;
+    height: 261px;
   }
   .content-header, p {
     font-weight: 100;
